@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Calculadora de IMC{% endblock %}
+
+{% block body %}
+    <form method="POST" action="#">
+        <div class="login-box">
+            <h1>Digite seu peso e altura</h1>
+            <div class="textbox">
+                <i class="fas fa-arrows-alt-h"></i>
+                <input id="peso" name="_peso" type="number" placeholder="Peso (kg)" required>
+            </div>
+
+            <div class="textbox">
+                <i class="fas fa-arrows-alt-v"></i>
+                <input id="altura" name="_altura" type="number" placeholder="Altura (cm)" required>
+            </div>
+
+            <input type="submit" class="btn" value="Calcular">
+        </div>
+    </form>
+{% endblock %}
